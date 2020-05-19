@@ -1,0 +1,21 @@
+# Synt
+
+Synt is an open music synthesizer and tracker that runs in the browser.
+
+![Screenshot of Synt](synt.png)
+
+## Running locally
+
+To run Synt you need to use a local server.
+
+On Mac and Linux you can start a Python SimpleHTTPServer from the terminal like this:
+
+```bash
+cd path/to/synt
+python -m SimpleHTTPServer 8008
+```
+
+Then go to `http://localhost:8008/` in your web browser and play!
+
+## License
+Synt is built upon [SoundBox](https://github.com/mbitsnbites/soundbox) and is licensed under [GPL3](gpl.txt).

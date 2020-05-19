@@ -1,0 +1,95 @@
+/* -*- mode: css; tab-width: 2; indent-tabs-mode: nil; -*-
+*
+* Copyright (c) 2011-2013 Marcus Geelnard
+*
+* This file is part of Synt.
+*
+* Synt is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* Synt is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with Synt.  If not, see <http://www.gnu.org/licenses/>.
+*
+*/
+@font-face {
+    font-family: 'teko-regular';
+    src: url('fonts/teko-regular.ttf') format('truetype')
+}
+
+body {
+    font-family: arial, sans-serif;
+    padding-bottom: 20px;
+    line-height: 24px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #aaa;
+}
+
+a:hover {
+    color: #555;
+}
+
+#content {
+    min-width: 200px;
+    max-width: 600px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'teko-regular', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    border-radius: 9px;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+h3 {
+    margin-top: 2em;
+}
+
+.centered {
+    text-align: center;
+}
+
+.smallButton {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+.note {
+    border: 1px solid #aaa;
+    padding: 2em;
+    border-radius: 3px;
+}
+
+.license {
+    font-family: monospace;
+    background-color: #f1f1f1;
+    padding: 2em;
+    border-radius: 3px;
+}
