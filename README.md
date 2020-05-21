@@ -2,6 +2,8 @@
 
 Synt is an open music synthesizer and tracker that runs in the browser.
 
+You can play it online [here](https://1jss.github.io/synt/).
+
 ![Screenshot of Synt](synt.png)
 
 ## Running locally

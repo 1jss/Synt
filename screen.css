@@ -18,10 +18,7 @@
 * along with Synt.  If not, see <http://www.gnu.org/licenses/>.
 *
 */
-@font-face {
-    font-family: 'teko-regular';
-    src: url('fonts/teko-regular.ttf') format('truetype')
-}
+@import url(https://fonts.googleapis.com/css?family=Teko);
 
 * {
     font-size: 14px;
@@ -39,7 +36,7 @@ body {
 }
 
 body, input, select {
-    font-family: 'teko-regular', sans-serif;
+    font-family: 'Teko', monospace;
 }
 
 select {
