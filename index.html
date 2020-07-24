@@ -47,6 +47,7 @@
 </head>
 
 <body onload="gui_init()">
+    <div id="overlay"></div>
     <div id="content">
         <div id="cover">
             <div id="dialog"></div>
@@ -100,10 +101,7 @@
         <!-- Sequencer -->
         <td>
             <div>
-                <img id="sequencerCopy" class="button" title="Copy" src="gui/edit-copy.svg" width="24" height="24" alt="Copy" />
-                <img id="sequencerPaste" class="button" title="Paste" src="gui/edit-paste.svg" width="24" height="24" alt="Paste" />
-                <img id="sequencerPatUp" class="button" title="Pattern up" src="gui/go-up.svg" width="24" height="24" alt="+1" />
-                <img id="sequencerPatDown" class="button" title="Pattern down" src="gui/go-down.svg" width="24" height="24" alt="-1" />
+                <img id="sequencerCopy" class="button" title="Copy" src="gui/edit-copy.svg" width="24" height="24" alt="Copy" /><img id="sequencerPaste" class="button" title="Paste" src="gui/edit-paste.svg" width="24" height="24" alt="Paste" /><img id="sequencerPatUp" class="button" title="Pattern up" src="gui/go-up.svg" width="24" height="24" alt="+1" /><img id="sequencerPatDown" class="button" title="Pattern down" src="gui/go-down.svg" width="24" height="24" alt="-1" />
             </div>
             <div id="sequencer" title="Enter pattern numbers, 0-9,A-Z">
                 <table class="tracks" id="sequencer-table"></table>
@@ -112,12 +110,7 @@
         <!-- Pattern -->
         <td>
             <div>
-                <img id="patternCopy" class="button" title="Copy" src="gui/edit-copy.svg" width="24" height="24" alt="Copy" />
-                <img id="patternPaste" class="button" title="Paste" src="gui/edit-paste.svg" width="24" height="24" alt="Paste" />
-                <img id="patternNoteUp" class="button" title="Note up" src="gui/go-up.svg" width="24" height="24" alt="+1" />
-                <img id="patternNoteDown" class="button" title="Note down" src="gui/go-down.svg" width="24" height="24" alt="-1" />
-                <img id="patternOctaveUp" class="button" title="Octave up" src="gui/go-top.svg" width="24" height="24" alt="+12" />
-                <img id="patternOctaveDown" class="button" title="Octave down" src="gui/go-bottom.svg" width="24" height="24" alt="-12" />
+                <img id="patternCopy" class="button" title="Copy" src="gui/edit-copy.svg" width="24" height="24" alt="Copy" /><img id="patternPaste" class="button" title="Paste" src="gui/edit-paste.svg" width="24" height="24" alt="Paste" /><img id="patternNoteUp" class="button" title="Note up" src="gui/go-up.svg" width="24" height="24" alt="+1" /><img id="patternNoteDown" class="button" title="Note down" src="gui/go-down.svg" width="24" height="24" alt="-1" /><img id="patternOctaveUp" class="button" title="Octave up" src="gui/go-top.svg" width="24" height="24" alt="+12" /><img id="patternOctaveDown" class="button" title="Octave down" src="gui/go-bottom.svg" width="24" height="24" alt="-12" />
             </div>
             <div id="pattern">
                 <table class="tracks" id="pattern-table" title="Use the piano or keyboard to enter notes"></table>
@@ -126,8 +119,7 @@
         <!-- Effects track -->
         <td>
             <div>
-                <img id="fxCopy" class="button" title="Copy" src="gui/edit-copy.svg" width="24" height="24" alt="Copy" />
-                <img id="fxPaste" class="button" title="Paste" src="gui/edit-paste.svg" width="24" height="24" alt="Paste" />
+                <img id="fxCopy" class="button" title="Copy" src="gui/edit-copy.svg" width="24" height="24" alt="Copy" /><img id="fxPaste" class="button" title="Paste" src="gui/edit-paste.svg" width="24" height="24" alt="Paste" />
             </div>
             <div id="fxtrack">
                 <table class="tracks" id="fxtrack-table" title="Use instrument and effect controls to edit"></table>
@@ -135,7 +127,7 @@
         </td>
         <!-- Instrument control -->
         <td>
-            <table class="ui">
+            <table id="instrumentControl" class="ui">
                 <tr>
                     <td>
                     </td>
@@ -147,8 +139,7 @@
                     <td>
                     </td>
                     <td>
-                        <img id="instrCopy" class="button" title="Copy instrument" src="gui/edit-copy.svg" width="24" height="24" alt="Copy" /><img id="instrPaste" class="button" title="Paste instrument" src="gui/edit-paste.svg" width="24"
-                          height="24" alt="Paste" /><img id="instrSave" class="button" title="Save instrument" src="gui/document-save.svg" width="24" height="24" alt="Save" />
+                        <img id="instrCopy" class="button" title="Copy instrument" src="gui/edit-copy.svg" width="24" height="24" alt="Copy" /><img id="instrPaste" class="button" title="Paste instrument" src="gui/edit-paste.svg" width="24" height="24" alt="Paste" /><img id="instrSave" class="button" title="Save instrument" src="gui/document-save.svg" width="24" height="24" alt="Save" />
                     </td>
                 </tr>
                 <tr>
