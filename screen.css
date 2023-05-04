@@ -229,11 +229,6 @@ table.ui, table.ui td {
 #sequencer, #pattern, #fxtrack {
     height: 625px;
     overflow: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-#sequencer.edit, #pattern.edit, #fxtrack.edit {
-    border-color: #555;
 }
 
 #statusText {

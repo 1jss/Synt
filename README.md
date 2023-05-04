@@ -17,6 +17,12 @@ cd path/to/synt
 python -m SimpleHTTPServer 8008
 ```
 
+In Python 3:
+
+```bash
+cd path/to/synth
+python -m http.server 8008
+
 Then go to `http://localhost:8008/` in your web browser and play!
 
 ## License
