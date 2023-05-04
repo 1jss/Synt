@@ -437,6 +437,7 @@ var CGUI = function()
   // Edit/gui state
   var mEditMode = EDIT_PATTERN,
       mKeyboardOctave = 4,
+      mLoopPlayback = true,
       mPattern = new CTableEditor(),
       mSeq = new CTableEditor(),
       mFxTrack = new CTableEditor(),
@@ -1766,6 +1767,8 @@ var CGUI = function()
     updateSlider(document.getElementById("fx_dist"), instrI[FX_DIST]);
     updateSlider(document.getElementById("fx_drive"), instrI[FX_DRIVE]);
 
+    updateCheckBox(document.getElementById("loopPlayback"), mLoopPlayback);
+
     // Clear the preset selection?
     if (resetPreset)
       clearPresetSelection();
@@ -2341,8 +2344,6 @@ var CGUI = function()
 
 
   var playGeneratedWave = function (wave) {
-    var isLooping = document.getElementById("loopPlayback").checked;
-
     try {
       if (mAudio) {
         // Restart the follower
@@ -2351,7 +2352,7 @@ var CGUI = function()
         // Load the data into the audio element (it will start playing as soon
         // as the data has been loaded)
         mAudio.src = URL.createObjectURL(new Blob([wave], {type: "audio/wav"}));
-        mAudio.loop = isLooping;
+        mAudio.loop = mLoopPlayback;
 
         // Hack
         mAudio.play();
@@ -2372,8 +2373,8 @@ var CGUI = function()
                 mAudioSourceNode = mAudioContext.createBufferSource();
                 mAudioSourceNode.buffer = buffer;
                 mAudioSourceNode.connect(mAudioContext.destination);
-                mAudioSourceNode.loop = isLooping;
-                if (!isLooping) {
+                mAudioSourceNode.loop = mLoopPlayback;
+                if (!mLoopPlayback) {
                   mAudioSourceNode.onended = function (e) {
                     // When the playback has ended, stop everything
                     mAudioSourceNode.disconnect();
@@ -2524,6 +2525,8 @@ var CGUI = function()
       fxCmd = OSC2_XENV;
     else if (o.id === "lfo_fxfreq")
       fxCmd = LFO_FX_FREQ;
+    else if (o.id === "loopPlayback")
+      mLoopPlayback = !mLoopPlayback;
 
     // Update the instrument (toggle boolean)
     var fxValue;
@@ -3686,6 +3689,9 @@ var CGUI = function()
     document.getElementById("instrPaste").onmousedown = instrPasteMouseDown;
     document.getElementById("instrSave").onmousedown = instrSaveMouseDown;
 
+
+    document.getElementById("loopPlayback").addEventListener("mousedown", boxMouseDown, false);
+    document.getElementById("loopPlayback").addEventListener("touchstart", boxMouseDown, false);
     document.getElementById("loopPlayback").checked = true;
 
     // Initialize the keyboard octave number.
