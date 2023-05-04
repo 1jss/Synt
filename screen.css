@@ -21,396 +21,396 @@
 @import url(https://fonts.googleapis.com/css?family=Teko);
 
 * {
-    font-size: 14px;
-    font-weight: normal;
-    text-transform: uppercase;
-    box-sizing: border-box;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 #overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1000px;
-    margin: 0;
-    padding: 0;
-    /*background: url("gui/grid.png");*/
-    z-index: 1000;
-    opacity: 0.1;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  margin: 0;
+  padding: 0;
+  /*background: url("gui/grid.png");*/
+  z-index: 1000;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    user-select: none;
-    background: #fff;
-    color: #aaa;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  background: #fff;
+  color: #aaa;
 }
 
 body, input, select {
-    font-family: 'Teko', monospace;
+  font-family: 'Teko', monospace;
 }
 
 select {
-    border: 0;
-    line-height: 16px;
-    height: 16px;
-    width: 100%;
-    color: #aaa;
+  border: 0;
+  line-height: 16px;
+  height: 16px;
+  width: 100%;
+  color: #aaa;
 }
 
 img {
-    user-select: none;
-    display: inline-block;
-    user-drag: none;
+  user-select: none;
+  display: inline-block;
+  user-select: none;
 }
 
 #menubar {
-    height: 32px;
+  height: 32px;
 }
 #menubar td {
-    height: 24px !important;
-    vertical-align: top;
-    padding: 0;
+  height: 24px !important;
+  vertical-align: top;
+  padding: 0;
 }
 
 #menubar td div {
-    vertical-align: top;
-    padding: 3px 4px 0 4px;
+  vertical-align: top;
+  padding: 3px 4px 0 4px;
 }
 
 #menubar td .textbutton {
-    line-height: 20px;
-    margin: 0;
-    padding: 3px 6px 0 6px;
-    border-radius: 4px;
-    cursor: pointer;
-    overflow: hidden;
+  line-height: 20px;
+  margin: 0;
+  padding: 3px 6px 0 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 #menubar td .textbutton:hover {
-    background: #f1f1f1;
-    color: #444;
+  background: #f1f1f1;
+  color: #444;
 }
 
 #menubar .button {
-    min-width: 24px;
-    height: 24px;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    overflow: hidden;
-    vertical-align: top;
+  min-width: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin: 4px 0;
+  padding: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: top;
 }
 
 #menubar .button:hover {
-    background: #f1f1f1;
-    color: #444;
+  background: #f1f1f1;
+  color: #444;
 }
 
 #menubar td .spacer {
-    color: #ddd;
+  color: #ddd;
 }
 
 #menubar td div input {
-    height: 14px;
-    padding: 3px 0 0 0;
-    border: 0;
-    border-radius: 4px;
-    color: #555;
-    background-color: #f1f1f1;
-    text-align: center;
+  height: 14px;
+  padding: 3px 0 0 0;
+  border: 0;
+  border-radius: 4px;
+  color: #555;
+  background-color: #f1f1f1;
+  text-align: center;
 }
 
 #loopPlayback {
-    margin: 2px 2px 0 0;
-    vertical-align: top;
+  margin: 2px 2px 0 0;
+  vertical-align: top;
 }
 
 #content {
-    visibility: hidden;
-    position: relative;
-    width: 1208px;
-    /*margin: 0 auto;*/
-    padding: 0;
+  visibility: hidden;
+  position: relative;
+  width: 1208px;
+  /*margin: 0 auto;*/
+  padding: 0;
 }
 
 #progressBarParent {
-    width: 200px;
-    height: 21px;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-    background-color: #fff;
-    border: 1px solid #aaa;
+  width: 200px;
+  height: 21px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #aaa;
 }
 
 #progressBar {
-    width: 1px;
-    height: 21px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    border: 0;
-    background: #aaa;
+  width: 1px;
+  height: 21px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  border: 0;
+  background: #aaa;
 }
 
 img {
-    border: none;
+  border: none;
 }
 
 p img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 a {
-    color: #555;
-    text-decoration: underline;
+  color: #555;
+  text-decoration: underline;
 }
 
 br {
-    width: 0;
+  width: 0;
 }
 a:hover {
-    color: #448;
+  color: #448;
 }
 
 h1 {
-    margin: 0;
-    text-align: center;
-    background: #eee;
+  margin: 0;
+  text-align: center;
+  background: #eee;
 }
 
 table.ui {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 table.ui th {
-    height: 24px;
-    width: 24px;
-    border-bottom: 2px solid #ddd;
-    color: #555;
+  height: 24px;
+  width: 24px;
+  border-bottom: 2px solid #ddd;
+  color: #555;
 }
 
 table.ui td {
-    height: 24px;
-    color: #aaa;
-    text-align: left;
-    border-bottom: 2px solid transparent;
+  height: 24px;
+  color: #aaa;
+  text-align: left;
+  border-bottom: 2px solid transparent;
 }
 
 #instrumentControl {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 #instrumentControl th {
-    vertical-align: middle;
-    width: 32px;
+  vertical-align: middle;
+  width: 32px;
 }
 
 #instrumentControl td {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .center {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 table.ui, table.ui td {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 #sequencer, #pattern, #fxtrack {
-    height: 625px;
-    overflow: auto;
+  height: 625px;
+  overflow: auto;
 }
 
 #statusText {
-    color: #aaa;
-    text-align: center;
+  color: #aaa;
+  text-align: center;
 }
 
 table.tracks {
-    cursor: default;
+  cursor: default;
 }
 
 table.tracks, table.tracks td, table.tracks th {
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-    padding: 0;
-    text-align: center;
-    vertical-align: middle;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 table.tracks th {
-    color: #aaa;
-    background: #fff;
-    border-color: #fff;
-    border-right-color: #ddd;
+  color: #aaa;
+  background: #fff;
+  border-color: #fff;
+  border-right-color: #ddd;
 }
 
 table.tracks td {
-    color: #aaa;
-    background: #fff;
+  color: #aaa;
+  background: #fff;
 }
 
 table.tracks tr.beat td {
-    background: #eee;
+  background: #eee;
 }
 
 table.tracks th.playpos {
-    background: #eee;
-    color: #555;
+  background: #eee;
+  color: #555;
 }
 
 table.tracks td:hover, table.tracks tr.beat td:hover {
-    color: #555;
-    background: #ddd;
+  color: #555;
+  background: #ddd;
 }
 
 table.tracks td.cursor, table.tracks tr.beat td.cursor {
-    color: #fff;
-    background: #aaa;
+  color: #fff;
+  background: #aaa;
 }
 
 table.tracks td.selected, table.tracks tr.beat td.selected {
-    color: #fff;
-    background: #aaa;
+  color: #fff;
+  background: #aaa;
 }
 td {
-    padding: 0;
+  padding: 0;
 }
 #sequencer {
-    border: 0;
-    margin: 0;
+  border: 0;
+  margin: 0;
 }
 #sequencer-table {
-    border: 0;
-    margin: 0
+  border: 0;
+  margin: 0
 }
 #sequencer table.tracks td {
-    width: 24px;
+  width: 24px;
 }
 
 #pattern table.tracks td {
-    width: 24px;
+  width: 24px;
 }
 
 #fxtrack table.tracks td {
-    width: 40px;
+  width: 40px;
 }
 
 .slider {
-    width: 201px;
-    height: 20px;
-    background: url("gui/slider-bg.svg") no-repeat center;
-    padding: 0;
+  width: 201px;
+  height: 20px;
+  background: url("gui/slider-bg.svg") no-repeat center;
+  padding: 0;
 }
 
 .slider img {
-    cursor: pointer;
-    vertical-align: middle;
+  cursor: pointer;
+  vertical-align: middle;
 }
 
 #osc1_wave_sin, #osc1_wave_saw, #osc1_wave_sqr, #osc1_wave_tri,
 #osc2_wave_sin, #osc2_wave_saw, #osc2_wave_sqr, #osc2_wave_tri,
 #lfo_wave_sin, #lfo_wave_saw, #lfo_wave_sqr, #lfo_wave_tri,
 #fx_filt_lp, #fx_filt_hp, #fx_filt_bp, #fx_filt_n {
-    cursor: pointer;
-    width: 15px;
-    height: 10px;
-    padding: 5px 0;
+  cursor: pointer;
+  width: 15px;
+  height: 10px;
+  padding: 5px 0;
 }
 
 .ui .button {
-    min-width: 24px;
-    height: 24px;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    overflow: hidden;
-    vertical-align: middle;
+  min-width: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: middle;
 }
 
 .ui .button:hover {
-    background: #f1f1f1;
-    color: #444;
+  background: #f1f1f1;
+  color: #444;
 }
 
 #dialog input[type=submit] {
-    border: 1px solid #f1f1f1;
-    border-radius: 4px;
-    padding: 3px 6px 0 6px;
-    margin: 4px;
-    cursor: pointer;
-    overflow: hidden;
-    color: #555;
-    background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  padding: 3px 6px 0 6px;
+  margin: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  color: #555;
+  background: #f1f1f1;
 }
 
 #dialog input[type=submit]:hover {
-    border: 1px solid #ddd;
-    background: #fff;
+  border: 1px solid #ddd;
+  background: #fff;
 }
 
 .box {
-    padding: 2px 0 0 0;
-    margin: 0;
-    cursor: pointer;
+  padding: 6px 0 0 0;
+  margin: 0;
+  cursor: pointer;
 }
 
 #keyboardtable {
-    width: 100%;
+  width: 100%;
 }
 
 .keyboard {
-    text-align: center;
+  text-align: center;
 }
 
 .keyboard img {
-    vertical-align: middle;
-    cursor: pointer;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 #octaveDown, #octaveUp, #patternCopy, #patternPaste {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #cover {
-    visibility: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
 }
 
 #cover #dialog {
-    visibility: hidden;
-    width: 600px;
-    margin: 100px auto auto auto;
-    color: #555;
-    text-align: center;
+  visibility: hidden;
+  width: 600px;
+  margin: 100px auto auto auto;
+  color: #555;
+  text-align: center;
 }
 
 #cover #dialog h3 {
-    margin: 0;
-    font-size: 24px;
+  margin: 0;
+  font-size: 24px;
 }
 
 #guiMaster {
-    background: #fff;
+  background: #fff;
 }
 
 #cover {
-    background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
 }
